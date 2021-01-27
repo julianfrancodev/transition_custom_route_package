@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:transition_custom_route/helpers/route_transitions.dart';
 import 'package:transition_custom_route/pages/page2.dart';
+import 'package:transitions_route_basic/transitions_route_basic.dart';
 
 class Page1 extends StatelessWidget {
   @override
@@ -20,10 +20,10 @@ class Page1 extends StatelessWidget {
           
           // Navigator.pushNamed(context, '/page2');
           //
-          RouteTransition(
+          TransitionsRouteBasic(
             context: context,
             child: Page2(),
-            animation: AnimationType.fadeIn,
+            animation: AnimationType.nomal,
             duration: Duration(milliseconds: 300),
           );
 
